@@ -9,15 +9,15 @@ class ProductManager{
     //3
     //4-metodo agregar productos
     addProduct(titulo, descripcion, precio, ruta, code, disponible) {
-        // Check if the code is already used for another product
+        //  Comprobar si el código ya se utiliza para otro producto
         if (this.productos.some((producto) => producto.code === code)) {
             console.log("Código repetido, no se agregó el producto.");
-            return false; // Return false if the code is duplicated to indicate the product was not added
+            return false; //  Devuelve falso si el código está duplicado para indicar que el producto no se agregó
         }
-        // Increment the ID counter and assign it to the new product
+        // Incrementar el contador de ID y asignarlo al nuevo producto
         this.ultimoId++;
         this.productos.push({ id: this.ultimoId, titulo, descripcion, precio, ruta, code, disponible });
-        return true; // Return true to indicate the product was successfully added
+        return true; // Devuelve verdadero para indicar que el producto se agregó con éxito
     }
 
     //5-Metodo mostrar productos del array
