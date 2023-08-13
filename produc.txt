@@ -1,0 +1,92 @@
+[
+    {
+      "id":1,
+      "titulo": "Alimento para Perros",
+      "descripcion": "Nutrición balanceada para perros de todas las edades y tamaños.",
+      "precio": 80,
+      "ruta": "imagenes/alimento_perros.jpg",
+      "code": "VP001",
+      "stock": 100
+    },
+    {
+      "id":2,
+      "titulo": "Collar Antipulgas y Garrapatas",
+      "descripcion": "Collar ajustable que protege a tu mascota contra pulgas y garrapatas.",
+      "precio": 220,
+      "ruta": "imagenes/collar_antipulgas.jpg",
+      "code": "VP002",
+      "stock": 50
+    },
+    {
+      "id":3,
+      "titulo": "Shampoo Suave para Gatos",
+      "descripcion": "Shampoo especialmente formulado para gatos, limpia y suaviza el pelaje.",
+      "precio": 320,
+      "ruta": "imagenes/shampoo_gatos.jpg",
+      "code": "VP003",
+      "stock": 75
+    },
+    {
+        "id":4,
+      "titulo": "Suplemento Vitamínico para Aves",
+      "descripcion": "Suplemento que aporta vitaminas y minerales esenciales para aves de jaula.",
+      "precio": 200,
+      "ruta": "imagenes/suplemento_aves.jpg",
+      "code": "VP004",
+      "stock": 30
+    },
+    {
+        "id":5,
+      "titulo": "Juguete Masticable para Perros",
+      "descripcion": "Juguete resistente para perros que ayuda a mantener su dentadura saludable.",
+      "precio": 150,
+      "ruta": "imagenes/juguete_perros.jpg",
+      "code": "VP005",
+      "stock": 60
+    },
+    {
+        "id":6,
+      "titulo": "Arena para Gatos",
+      "descripcion": "Arena absorbente para la bandeja de arena de tu gato.",
+      "precio": 300,
+      "ruta": "imagenes/arena_gatos.jpg",
+      "code": "VP006",
+      "stock": 40
+    },
+    {
+        "id":7,
+      "titulo": "Cepillo de Pelo para Mascotas",
+      "descripcion": "Cepillo suave para desenredar y mantener el pelaje de tus mascotas.",
+      "precio": 180,
+      "ruta": "imagenes/cepillo_mascotas.jpg",
+      "code": "VP007",
+      "stock": 90
+    },
+    {
+        "id":8,
+      "titulo": "Peine Quita Pulgas",
+      "descripcion": "Peine de dientes finos para eliminar pulgas y huevos del pelaje de tu mascota.",
+      "precio": 160,
+      "ruta": "imagenes/peine_quita_pulgas.jpg",
+      "code": "VP008",
+      "stock": 25
+    },
+    {
+        "id":9,
+      "titulo": "Juguete Interactivo para Gatos",
+      "descripcion": "Juguete con plumas y cuerdas para mantener entretenido a tu gato.",
+      "precio": 60,
+      "ruta": "imagenes/juguete_gatos.jpg",
+      "code": "VP009",
+      "stock": 55
+    },
+    {
+        "id":10,
+      "titulo": "Medicamento Antiinflamatorio",
+      "descripcion": "Medicamento recetado por veterinarios para reducir la inflamación en mascotas.",
+      "precio": 135,
+      "ruta": "imagenes/medicamento_veterinario.jpg",
+      "code": "VP010",
+      "stock": 15
+    }
+  ]
