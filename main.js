@@ -1,8 +1,10 @@
 import {promises as fs } from "fs"
 
+
+
 //1-Clase ProductManager
-class ProductManager{
-    constructor(path){
+export default class ProductManager{
+    constructor(){
         //2-arreglo vacío
         this.productos= []
         this.ultimoId = 10; // Inicializamos el contador del último ID utilizado en 0
@@ -29,10 +31,15 @@ class ProductManager{
     //5-Metodo mostrar productos del array
     
 
-    getProduct= async()=>{
-        const productList = JSON.parse(await fs.readFile(this.path, "utf-8"))
-        return productList;
-    }
+    getProduct = async (limit) => {
+        const productList = JSON.parse(await fs.readFile(this.path, "utf-8"));
+        
+        if (limit !== undefined && !isNaN(limit)) {
+            return productList.slice(0, limit);
+        } else {
+            return productList;
+        }
+    };
 
     //6-metodo obteer prodcto por id
     getProductId= async(id)=>{
@@ -75,8 +82,14 @@ class ProductManager{
             console.log("No existe el producto con ese ID:", id);
         }
     }
+
+    
     
 }
+
+//Servidor basado en express donde podamos hacer consultas a nuestro archivo de productos
+
+
 
 //Iniciamos Pruebas
 
@@ -84,6 +97,8 @@ const productos = new ProductManager
 
 //Forma 1 de ver productos
 console.log(await productos.getProduct());
+
+// productos.getProductId(2)
 
 //Forma 2
 // async function verProductos() {
